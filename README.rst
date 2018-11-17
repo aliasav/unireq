@@ -12,16 +12,20 @@ API testers and more.
 Quick start
 -----------
 
-pip install -r requirements.txt
-pip install unireq
+``pip install -r requirements.txt``
+
+``pip install unireq``
 
 Usage
 -----------
 
-from request_utils import parse_request, get_client_details
+::
+  
+  # import the utility functions
+  from request_utils import parse_request, get_client_details
 
-# get all POST data in the request
-data = parse_request(request)
+  # get all POST data in the request
+  data = parse_request(request)
 
-# get clint details
-data['client_details'] = get_client_details(request)
+  # get clint details
+  data['client_details'] = get_client_details(request)
